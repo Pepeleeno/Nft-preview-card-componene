@@ -1,0 +1,183 @@
+body {
+  background-color: #0D192C;
+  padding-top: 152px;
+  height: 800px;
+  margin: 0;
+}
+
+main {
+  height: 596px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #15263F;
+  border-radius: 15px;
+}
+
+.image-holder {
+  display: flex;
+  position: relative;
+}
+
+
+.NFT-image {
+  height: 302px;
+  width: 302px;
+  margin: 24px;
+  margin-bottom: 0;
+  border-radius: 8px;
+  /* cursor: pointer; */
+}
+
+.overlay {
+  position:absolute;
+  width: 302px;
+  height: 302px;
+  margin: 24px;
+  cursor: pointer;
+  opacity: 0;
+  background-color: #00FFF8;
+  border-radius: 8px;
+  transition: opacity 0.2s;
+  z-index: 0;
+}
+
+
+.overlay:hover {
+  opacity: 0.6;
+}
+
+.overlay img {
+  margin: 127px;
+  opacity: 1;
+}
+
+
+.title {
+  font-family: outfit;
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+  margin: 24px 24px 0px 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.title:hover {
+  color: #00FFF8;
+}
+
+.title-description {
+  margin: 16px 24px 24px 24px;
+  font-family: outfit;
+  color: #8BACD9;
+  line-height: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.left-side {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left-side img {
+  height: 16px;
+  width: 10px;
+  margin-right: 8px;
+}
+
+.left-side p {
+  font-family: outfit;
+  font-weight: 600;
+  color: #00FFF8;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ 
+
+.right-side {
+  margin-right: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-side img {
+  height: 16px;
+  width: 16px;
+}
+
+.right-side p {
+  font-family: outfit;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8BACD9;
+  margin-left: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+.author {
+  width: 302px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid #2E405A;
+  padding-top: 8px;
+  margin: auto;
+}
+
+.author img {
+  height: 33px;
+  width: 33px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid white;
+  margin-left: 0;
+}
+
+.author p {
+  margin-left: 16px;
+  font-family: outfit;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.author p:hover {
+  color: #00FFF8;
+}
+
+span {
+  color: #8BACD9;
+}
+
+
+@media screen and (max-width: 400px) {
+  body {
+    width: 375px;
+    height: 667px;
+    margin: auto;
+    padding-top: 62px;
+  }
+
+  main {
+    margin-top: 0;
+  }
+}
